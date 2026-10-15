@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 480" width="240" height="480">
+  <!-- Płytka -->
+  <rect x="30" y="20" width="180" height="440" rx="10" fill="#00878F" stroke="#005f63" stroke-width="2"/>
+
+  <!-- Port USB Mini-B -->
+  <rect x="80" y="5" width="80" height="40" rx="3" fill="#D3D3D3" stroke="#888888"/>
+  <rect x="90" y="5" width="60" height="8" fill="#A9A9A9"/>
+
+  <!-- Przycisk Reset -->
+  <rect x="100" y="60" width="40" height="25" rx="3" fill="#EEEEEE" stroke="#AAAAAA"/>
+  <circle cx="120" cy="72.5" r="7" fill="#DD3333"/>
+
+  <!-- Główny mikrokontroler (ATmega328) -->
+  <rect x="85" y="195" width="70" height="70" rx="5" fill="#2C2C2C" transform="rotate(45 120 230)"/>
+  <circle cx="120" cy="230" r="4" fill="#1A1A1A"/>
+  <!-- Nóżki procesora -->
+  <g stroke="#D3D3D3" stroke-width="1.5">
+    <path d="M90 205 l-5-5 M98 197 l-5-5 M106 189 l-5-5 M114 181 l-5-5 M126 181 l5-5 M134 189 l5-5 M142 197 l5-5 M150 205 l5-5"/>
+    <path d="M150 255 l5 5 M142 263 l5 5 M134 271 l5 5 M126 279 l5 5 M114 279 l-5 5 M106 271 l-5 5 M98 263 l-5 5 M90 255 l-5 5"/>
+  </g>
+
+  <!-- Rezonator i inne drobne układy -->
+  <rect x="110" y="100" width="20" height="10" fill="#D3D3D3" rx="1"/>
+  <rect x="112" y="135" width="16" height="30" fill="#222222" rx="1"/>
+
+  <!-- Piny boczne (fizyczne otwory) -->
+  <g fill="#FFD700" stroke="#B8860B" stroke-width="1.5">
+    <!-- Lewa strona -->
+    <circle cx="45" cy="50" r="6"/> <circle cx="45" cy="75" r="6"/> <circle cx="45" cy="100" r="6"/>
+    <circle cx="45" cy="125" r="6"/> <circle cx="45" cy="150" r="6"/> <circle cx="45" cy="175" r="6"/>
+    <circle cx="45" cy="200" r="6"/> <circle cx="45" cy="225" r="6"/> <circle cx="45" cy="250" r="6"/>
+    <circle cx="45" cy="275" r="6"/> <circle cx="45" cy="300" r="6"/> <circle cx="45" cy="325" r="6"/>
+    <circle cx="45" cy="350" r="6"/> <circle cx="45" cy="375" r="6"/> <circle cx="45" cy="400" r="6"/>
+    <circle cx="45" cy="425" r="6"/>
+
+    <!-- Prawa strona -->
+    <circle cx="195" cy="50" r="6"/> <circle cx="195" cy="75" r="6"/> <circle cx="195" cy="100" r="6"/>
+    <circle cx="195" cy="125" r="6"/> <circle cx="195" cy="150" r="6"/> <circle cx="195" cy="175" r="6"/>
+    <circle cx="195" cy="200" r="6"/> <circle cx="195" cy="225" r="6"/> <circle cx="195" cy="250" r="6"/>
+    <circle cx="195" cy="275" r="6"/> <circle cx="195" cy="300" r="6"/> <circle cx="195" cy="325" r="6"/>
+    <circle cx="195" cy="350" r="6"/> <circle cx="195" cy="375" r="6"/> <circle cx="195" cy="400" r="6"/>
+    <circle cx="195" cy="425" r="6"/>
+  </g>
+
+  <!-- Białe opisy pinów bezpośrednio NA płytce (sitodruk) -->
+  <g font-family="monospace, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="start" alignment-baseline="middle">
+    <!-- Lewa strona (odsunięte lekko w prawo od pinów) -->
+    <text x="58" y="51">D12</text>
+    <text x="58" y="76">D11</text>
+    <text x="58" y="101">D10</text>
+    <text x="58" y="126">D9</text>
+    <text x="58" y="151">D8</text>
+    <text x="58" y="176">D7</text>
+    <text x="58" y="201">D6</text>
+    <text x="58" y="226">D5</text>
+    <text x="58" y="251">D4</text>
+    <text x="58" y="276">D3</text>
+    <text x="58" y="301">D2</text>
+    <text x="58" y="326">GND</text>
+    <text x="58" y="351">RST</text>
+    <text x="58" y="376">RX0</text>
+    <text x="58" y="401">TX1</text>
+    <text x="58" y="426">RAW</text>
+  </g>
+
+  <g font-family="monospace, sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF" text-anchor="end" alignment-baseline="middle">
+    <!-- Prawa strona (odsunięte lekko w lewo od pinów) -->
+    <text x="182" y="51">D13</text>
+    <text x="182" y="76">3V3</text>
+    <text x="182" y="101">REF</text>
+    <text x="182" y="126">A0</text>
+    <text x="182" y="151">A1</text>
+    <text x="182" y="176">A2</text>
+    <text x="182" y="201">A3</text>
+    <text x="182" y="226">A4</text>
+    <text x="182" y="251">A5</text>
+    <text x="182" y="276">A6</text>
+    <text x="182" y="301">A7</text>
+    <text x="182" y="326">5V</text>
+    <text x="182" y="351">RST</text>
+    <text x="182" y="376">GND</text>
+    <text x="182" y="401">VIN</text>
+    <text x="182" y="426">5V</text>
+  </g>
+
+  <!-- Napisy ozdobne i ICSP -->
+  <text x="120" y="300" font-family="sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">NANO</text>
+  <text x="120" y="315" font-family="sans-serif" font-size="7" fill="#FFFFFF" text-anchor="middle">V3.0</text>
+
+  <!-- Złącze ICSP -->
+  <g fill="#FFD700" stroke="#B8860B" stroke-width="1">
+    <circle cx="105" cy="430" r="3.5"/> <circle cx="135" cy="430" r="3.5"/>
+    <circle cx="105" cy="442" r="3.5"/> <circle cx="135" cy="442" r="3.5"/>
+    <circle cx="105" cy="454" r="3.5"/> <circle cx="135" cy="454" r="3.5"/>
+  </g>
+  <text x="120" y="415" font-family="sans-serif" font-size="7" fill="#FFFFFF" text-anchor="middle" font-weight="bold">ICSP</text>
+</svg>

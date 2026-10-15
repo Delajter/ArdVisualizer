@@ -1,0 +1,22 @@
+{
+  "app": {
+    "fullscreen": true,
+    "window_size": [800, 600]
+  },
+  "file": {
+       "title": "unsaved"
+  },
+
+  "scene": {
+    "size": [5000, 5000],
+    "background_color": "#192D4B",
+    "component_color": "#325078",
+    "wire_color": "#FFA500",
+    "grid": {
+      "minor_step": 20,
+      "minor_color": "#3C5A82",
+      "major_step": 100,
+      "major_color": "#5A82B4"
+    }
+  }
+}

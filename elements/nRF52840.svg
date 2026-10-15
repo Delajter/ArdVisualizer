@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 520" width="300" height="520">
+  <!-- Płytka PCB (Bardzo Ciemny Granat/Czarny charakterystyczny dla nice!nano) -->
+  <rect x="35" y="20" width="230" height="480" rx="12" fill="#0D1117" stroke="#1F242C" stroke-width="3"/>
+
+  <!-- Port USB-C (Zredukowany, mid-mount) -->
+  <rect x="100" y="5" width="100" height="35" rx="4" fill="#D3D3D3" stroke="#888888" stroke-width="1.5"/>
+  <rect x="110" y="5" width="80" height="8" rx="2" fill="#222222"/>
+  <path d="M 100 25 L 110 25 M 190 25 L 200 25" stroke="#888" stroke-width="2"/>
+
+  <!-- Chip nRF52840 (Główny mikrokontroler) -->
+  <rect x="115" y="140" width="70" height="70" rx="4" fill="#222222" stroke="#333" stroke-width="1"/>
+  <text x="150" y="170" font-family="sans-serif" font-size="9" font-weight="900" fill="#888888" text-anchor="middle">nRF52840</text>
+  <text x="150" y="185" font-family="sans-serif" font-size="8" fill="#555555" text-anchor="middle">nice!nano</text>
+
+  <!-- Pady baterii B+ B- (Na dole pośrodku) -->
+  <circle cx="125" cy="455" r="5" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="125" y="443" font-family="sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF" text-anchor="middle">B+</text>
+
+  <circle cx="175" cy="455" r="5" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+  <text x="175" y="443" font-family="sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF" text-anchor="middle">B-</text>
+
+  <!-- Elementy SMD i diody statusu -->
+  <rect x="142" y="50" width="16" height="10" fill="#555" rx="1"/>
+  <circle cx="70" cy="55" r="3" fill="#00FF00"/> <!-- Dioda LED -->
+  <circle cx="230" cy="55" r="3" fill="#FFAA00"/> <!-- Dioda ład. -->
+
+  <!-- Piny boczne (fizyczne otwory - 12 po każdej stronie) -->
+  <g fill="#FFD700" stroke="#B8860B" stroke-width="1.5">
+    <!-- Lewa strona -->
+    <circle cx="50" cy="70" r="5.5"/> <circle cx="50" cy="100" r="5.5"/> <circle cx="50" cy="130" r="5.5"/>
+    <circle cx="50" cy="160" r="5.5"/> <circle cx="50" cy="190" r="5.5"/> <circle cx="50" cy="220" r="5.5"/>
+    <circle cx="50" cy="250" r="5.5"/> <circle cx="50" cy="280" r="5.5"/> <circle cx="50" cy="310" r="5.5"/>
+    <circle cx="50" cy="340" r="5.5"/> <circle cx="50" cy="370" r="5.5"/> <circle cx="50" cy="400" r="5.5"/>
+
+    <!-- Prawa strona -->
+    <circle cx="250" cy="70" r="5.5"/> <circle cx="250" cy="100" r="5.5"/> <circle cx="250" cy="130" r="5.5"/>
+    <circle cx="250" cy="160" r="5.5"/> <circle cx="250" cy="190" r="5.5"/> <circle cx="250" cy="220" r="5.5"/>
+    <circle cx="250" cy="250" r="5.5"/> <circle cx="250" cy="280" r="5.5"/> <circle cx="250" cy="310" r="5.5"/>
+    <circle cx="250" cy="340" r="5.5"/> <circle cx="250" cy="370" r="5.5"/> <circle cx="250" cy="400" r="5.5"/>
+  </g>
+
+  <!-- Opisy pinów "NA płytce" z mapowaniem fizycznym i nRF (P0.xx / P1.xx) -->
+  <g font-family="monospace, sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF" alignment-baseline="middle">
+    <!-- Lewa strona (Tekst dosunięty do pinów, wyrównany do lewej) -->
+    <text x="62" y="70">TX0 (P0.06)</text>
+    <text x="62" y="100">RX1 (P0.08)</text>
+    <text x="62" y="130">GND</text>
+    <text x="62" y="160">GND</text>
+    <text x="62" y="190">D2 (P0.17)</text>
+    <text x="62" y="220">D3 (P0.20)</text>
+    <text x="62" y="250">D4 (P0.22)</text>
+    <text x="62" y="280">D5 (P0.24)</text>
+    <text x="62" y="310">D6 (P1.00)</text>  <!-- Tu pojawia się D100 (P1.00) -->
+    <text x="62" y="340">D7 (P0.11)</text>
+    <text x="62" y="370">D8 (P1.04)</text>  <!-- D104 -->
+    <text x="62" y="400">D9 (P1.11)</text>  <!-- D111 -->
+
+    <!-- Prawa strona (Wyrównanie do prawej, od wewnątrz pinów) -->
+    <g text-anchor="end">
+      <text x="238" y="70">RAW</text>
+      <text x="238" y="100">GND</text>
+      <text x="238" y="130">RST</text>
+      <text x="238" y="160">VCC</text>
+      <text x="238" y="190">(P0.31) A3</text>
+      <text x="238" y="220">(P0.29) A2</text>
+      <text x="238" y="250">(P0.02) A1</text>
+      <text x="238" y="280">(P0.26) A0</text>
+      <text x="238" y="310">(P0.05) D15</text>
+      <text x="238" y="340">(P0.30) D14</text>
+      <text x="238" y="370">(P0.15) D16</text>
+      <text x="238" y="400">(P0.27) D10</text>
+    </g>
+  </g>
+
+  <!-- Napisy identyfikacyjne / Branding -->
+  <text x="150" y="310" font-family="sans-serif" font-size="14" font-weight="900" fill="#00A8FF" text-anchor="middle" letter-spacing="0.5">nice!nano</text>
+  <text x="150" y="325" font-family="sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF" text-anchor="middle">v2.0 / nRF52840</text>
+
+  <text x="150" y="488" font-family="sans-serif" font-size="7" fill="#444" text-anchor="middle">designed for wireless</text>
+</svg>
